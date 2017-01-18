@@ -146,10 +146,11 @@ p {
 	margin-bottom: 20px;
 }
 .nth-para {
-	padding: 30px 0;
+	padding-top: 30px;
+	padding-bottom: 10px
 }
 .greyish {
-	background-color: #faf9f7;
+	background-color: #f0f0f0;
 	margin: 0 -55px;
 	padding-left: 50px;	    
 	margin-bottom: 30px;
@@ -185,7 +186,7 @@ p {
 	color: #ffffff;
 	font-size: 22px;
 	background-color: #ca0000;
-	margin: 30px 0;
+	margin: 40px 0;
 	padding: 15px;
 	margin-right: 250px;
 	position: relative;
@@ -208,3 +209,77 @@ p {
 	font-weight: 700;
 	line-height: 35px;
 }
+
+
+@media only screen and (max-width: 931px) {
+    .red-rectangle,
+    .silverHeading {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+    }   
+    .wrapper {
+        padding: 0 15px;
+    }
+    .person-2 {
+        margin-left: -10px;
+    }
+    .greyish {		
+        background: #f0f0f0;
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+        padding: 0 30px;    
+    }
+    .red-rectangle:after,
+    .red-rectangle:before {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .callout {
+        margin: 50px 30px 20px 180px;
+    }
+}
+
+@media only screen and (max-width: 768px) {    
+    .person {
+        display: none;
+    }
+    .yellow-arrow {
+        display: none;
+    }  
+}
+@media only screen and (max-width: 649px) {
+    .silverHeading {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .person-2 {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .callout {
+        padding: 15px 0px;
+        display: block;
+        color: #ffffff;
+        font-weight: 600;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        max-width: 300px;
+    }
+    .callout:after {
+        display: none;
+    }
+}
+    
+@media only screen and (max-width: 480px) {
+        .red-rectangle
+         {
+            padding: 20px 30px;
+        }
+    }
