@@ -54,45 +54,39 @@ table {
 .align-left {
     float: left;
 }
-
 .align-right {
     float: right;
 }
-
 .text-center {
 	text-align: center;
 }
-
+.padding-left-20 {
+	padding-left: 20px;
+}
 .margin-bottom-10 {
     margin-bottom: 10px;
 }
-
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
-
 .margin-bottom-30 {
     margin-bottom: 30px;
 }
-
 .margin-bottom-40 {
     margin-bottom: 40px;
 }
-
 strong,
 b {
     font-weight: 700;
 }
-
 em,
 i {
     font-style: italic;
 }
-
 p,
 ul li,
 ol li {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 24px;
 }
 
@@ -103,4 +97,114 @@ ol li {
 * {
    box-sizing: border-box; 
 }
-
+.wrapper {
+	max-width: 880px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	padding: 0 55px;
+	position: relative;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	background-color: #282828;
+}
+.red-rectangle {
+	background-image: url("../img/big-red-rectangle.png");
+	background-size: cover;
+	color: #ffffff;
+	position: relative;
+	top: 2px;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	padding: 20px 100px;
+	margin: 0 -70px;
+}
+.red-rectangle:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid #7d0000;
+    border-left: 16px solid transparent;
+    bottom: -14px;
+    left: -1px;
+    right: 0;
+}
+.red-rectangle:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid #7d0000;
+    border-right: 16px solid transparent;
+    right: -1px;
+    bottom: -14px;
+}
+p {
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.nth-para {
+	padding: 30px 0;
+}
+.greyish {
+	background-color: #faf9f7;
+	margin: 0 -55px;
+	padding-left: 50px;	    
+	margin-bottom: 30px;
+}
+.person {
+	position: relative;
+	top: -50px;
+	margin-left: 30px;
+}
+.yellow-arrow {
+	display: inline;
+	position: relative;
+}
+.yellow-arrow::after{
+	content: '';
+	background: url('../img/arrow.png');
+	display: block;
+	width: 68px;
+	height: 42px;
+	position: absolute;
+	left: 70px;
+	top: 20px;
+}
+.person-2 {
+	float: left;
+	margin-left: -80px;
+	margin-right: 20px;
+	position: relative;
+	top: -20px;
+	z-index: 1;
+}
+.callout {
+	color: #ffffff;
+	font-size: 22px;
+	background-color: #ca0000;
+	margin: 30px 0;
+	padding: 15px;
+	margin-right: 250px;
+	position: relative;
+}
+.callout::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 52px solid #ca0000;
+    border-right: 27px solid transparent;
+	position: absolute;
+	right: -27px;
+	top: 0;
+}
+.silver-heading {
+	background-color: #f2f2f4;
+	margin: 0 -55px;
+	padding: 20px 60px;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 35px;
+}
