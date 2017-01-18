@@ -51,12 +51,16 @@ table {
 
 
 /* HELPER CLASSES BEGIN */
-.alignLeft {
+.align-left {
     float: left;
 }
 
-.alignRight {
+.align-right {
     float: right;
+}
+
+.text-center {
+	text-align: center;
 }
 
 .margin-bottom-10 {
